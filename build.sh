@@ -32,9 +32,15 @@ auto/configure --prefix=/etc/nginx --sbin-path=/usr/sbin/nginx \
 --http-proxy-temp-path=/var/cache/nginx/proxy_temp \
 --http-fastcgi-temp-path=/var/cache/nginx/fastcgi_temp \
 --http-uwsgi-temp-path=/var/cache/nginx/uwsgi_temp \
---user=www-data --group=www-data --with-file-aio \
---with-threads --with-pcre-jit --with-http_ssl_module \
---with-http_v2_module --with-http_v3_module \
+--user=www-data --group=www-data \
+--with-compat --with-file-aio --with-threads --with-pcre-jit --with-http_sub_module \
+--with-http_ssl_module --with-http_v2_module --with-http_v3_module \
+--with-http_addition_module --with-http_auth_request_module --with-http_dav_module \
+--with-http_flv_module --with-http_gunzip_module --with-http_gzip_static_module \
+--with-http_mp4_module --with-http_random_index_module --with-http_realip_module \
+--with-http_secure_link_module --with-http_slice_module --with-http_stub_status_module \
+--with-mail --with-mail_ssl_module --with-stream --with-stream_realip_module \
+--with-stream_ssl_module --with-stream_ssl_preread_module \
 --without-select_module --without-poll_module \
 --without-http_access_module --without-http_autoindex_module \
 --without-http_browser_module --without-http_charset_module \
